@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="menu">
+			<div class="logo"><img src ="logo.jpg"></div>
+			<ul>
+				<li><a href="http://localhost/project/search/visits.asp"><img src="images/5.jpg"></a></li>
+				<li><a href="http://localhost/project/search/orderpage.asp"><img src="images/6.svg"></a></li>
+				<li><a href="http://localhost/project/search/cartpage.asp"><img src="images/7.png"></a></li>
+			</ul>
+	</div>
+	<div class="sidebar">
+		<a href="http://localhost/project/dashboard/index.html"><span>Dashboard</span></a>
+		<a href="http://localhost/project/search/index.html"><span>Search</span></a>
+		<a href="http://localhost/project/dashboard/index.html"><span>Recommend</span></a>
+		<a href="http://localhost/project/search/cartpage.asp"><span>Cart</span></a>
+		<a href="http://localhost/project/search/orderpage.asp"><span>Your orders</span></a>
+		<a href="http://localhost/project/search/upcoming.html"><span>Upcoming</span></a>
+	 </div> 
+<div class="wrapper">
+	<h2>&nbsp&nbsp&nbspSearch Diamonds</h2>
+	<div style="display:inline-block;">
+	<form method="POST" action="all.asp">
+	<input type="submit" class="submit" value="Show All">
+	</form>
+	</div>
+	<h2>&nbsp&nbsp&nbspSearch Diamonds with filters</h2>
+	<div class="content">
+	<form method="POST" action="check.asp">
+			<!--
+			--><input class="checkbox-tools" type="radio" name="shape" value="round" id="tool-2" checked>
+			<label class="for-checkbox-tools" for="tool-2">
+		        <img class="buim" src="images/1.png"><br>
+				Round
+			</label><!--
+			--><input class="checkbox-tools" type="radio" name="shape" value="princess" id="tool-3">
+			<label class="for-checkbox-tools" for="tool-3">
+				<img class="buim" src="images/2.png"><br>
+				Princess
+			</label><!--
+			--><input class="checkbox-tools" type="radio" name="shape" value="pear" id="tool-4">
+			<label class="for-checkbox-tools" for="tool-4">
+				<img class="buim" src="images/3.png"><br>
+				Pear
+			</label><!--
+			--><input class="checkbox-tools" type="radio" name="shape" value="heart" id="tool-5">
+			<label class="for-checkbox-tools" for="tool-5">
+				<img class="buim" src="images/4.png"><br>
+				Heart
+			</label><!--
+			--><input class="checkbox-tools" type="radio" name="shape" value="oval" id="tool-6">
+			<label class="for-checkbox-tools" for="tool-6">
+				<img class="buim" src="images/5.png"><br>
+				Oval
+			</label><!--
+			--><input class="checkbox-tools" type="radio" name="shape" value="marquise" id="tool-7">
+			<label class="for-checkbox-tools" for="tool-7">
+				<img class="buim" src="images/6.png"><br>
+				Marquise
+			</label><!--
+			--><input class="checkbox-tools" type="radio" name="shape" value="emerald" id="tool-8">
+			<label class="for-checkbox-tools" for="tool-8">
+				<img class="buim" src="images/7..png"><br>
+				Emerald
+			</label><!--
+			--><input class="checkbox-tools" type="radio" name="shape" value="radiant" id="tool-9">
+			<label class="for-checkbox-tools" for="tool-9">
+				<img class="buim" src="images/8.png"><br>
+				Radiant
+			</label><!--
+			--><input class="checkbox-tools" type="radio" name="shape" value="cushion" id="tool-10">
+			<label class="for-checkbox-tools" for="tool-10">
+				<img class="buim" src="images/9.png"><br>
+				Cushion
+			</label>
+		<hr>
+		<!--<div class="range">
+		<h5>&nbsp&nbsp&nbsp&nbsp&nbspCarat Range</h5>
+			<input type="number" class="from" name=" from" placeholder="From">
+			<hr>
+			<input type="number" class="to" name="to" placeholder="To">
+			<input type="reset" class="reset" value="Reset Carat">
+		</div>-->
+		<br>
+			<h5>&nbsp&nbsp&nbsp&nbsp&nbspColor </h5>
+			<input class="button" type="radio" name="t" value="white" id="t-1" checked>
+			<label class="for-button" for="t-1">
+				White
+			</label>
+			<input class="button" type="radio" name="t" value="fancy" id="t-2">
+			<label class="for-button" for="t-2">
+				Fancy
+			</label>
+			<br>
+			<input class="color" type="radio" name="c" value="d" id="c-2" checked>
+			<label class="for-color" for="c-2">
+				D
+			</label>
+			<input class="color" type="radio" name="c" value="e" id="c-3">
+			<label class="for-color" for="c-3">
+				E
+			</label>
+			<input class="color" type="radio" name="c" value="f" id="c-4">
+			<label class="for-color" for="c-4">
+				F
+			</label>
+			<input class="color" type="radio" name="c" value="g" id="c-5">
+			<label class="for-color" for="c-5">
+				G
+			</label>
+			<input class="color" type="radio" name="c" value="h" id="c-6">
+			<label class="for-color" for="c-6">
+				H
+			</label>
+			<input class="color" type="radio" name="c" value="i" id="c-7">
+			<label class="for-color" for="c-7">
+				I
+			</label>
+			<input class="color" type="radio" name="c" value="j" id="c-8">
+			<label class="for-color" for="c-8">
+				J
+			</label>
+			<input class="color" type="radio" name="c" value="k" id="c-9">
+			<label class="for-color" for="c-9">
+				K
+			</label>
+			<input class="color" type="radio" name="c" value="l" id="c-10">
+			<label class="for-color" for="c-10">
+				L
+			</label>
+			<input class="color" type="radio" name="c" value="m" id="c-11">
+			<label class="for-color" for="c-11">
+				M
+			</label>
+			<input class="color" type="radio" name="c" value="n" id="c-12">
+			<label class="for-color" for="c-12">
+				N
+			</label>
+			<input class="color" type="radio" name="c" value="o-p" id="c-13">
+			<label class="for-color" for="c-13">
+				O-P
+			</label>
+			<input class="color" type="radio" name="c" value="s-t" id="c-14">
+			<label class="for-color" for="c-14">
+				S-T
+			</label>
+			<input class="color" type="radio" name="c" value="q-r" id="c-15">
+			<label class="for-color" for="c-15">
+				Q-R
+			</label>
+			<input class="color" type="radio" name="c" value="u-v" id="c-16">
+			<label class="for-color" for="c-16">
+				U-V
+			</label>
+			<input class="color" type="radio" name="c" value="w-x" id="c-17">
+			<label class="for-color" for="c-17">
+				W-X
+			</label>
+			<input class="color" type="radio" name="c" value="y-z" id="c-18">
+			<label class="for-color" for="c-18">
+				Y-Z
+			</label>
+		<hr>
+			<h5>&nbsp&nbsp&nbsp&nbsp&nbspClarity </h5>
+			<input class="clarity" type="radio" name="cl" value="fl" id="cl-2" checked>
+			<label class="for-clarity" for="cl-2">
+				FL
+			</label>
+			<input class="clarity" type="radio" name="cl" value="if" id="cl-3">
+			<label class="for-clarity" for="cl-3">
+				IF
+			</label>
+			<input class="clarity" type="radio" value="vvs1" name="cl" id="cl-4">
+			<label class="for-clarity" for="cl-4">
+				VVS1
+			</label>
+			<input class="clarity" type="radio" value="vvs2" name="cl" id="cl-5">
+			<label class="for-clarity" for="cl-5">
+				VVS2
+			</label>
+			<input class="clarity" type="radio" value="vsl" name="cl" id="cl-6">
+			<label class="for-clarity" for="cl-6">
+				VS1
+			</label>
+			<input class="clarity" type="radio" value="vs2" name="cl" id="cl-7">
+			<label class="for-clarity" for="cl-7">
+				VS2
+			</label>
+			<input class="clarity" type="radio" value="si1" name="cl" id="cl-8">
+			<label class="for-clarity" for="cl-8">
+				SI1
+			</label>
+			<input class="clarity" type="radio" name="cl" value="si2" id="cl-9">
+			<label class="for-clarity" for="cl-9">
+				SI2
+			</label>
+			<input class="clarity" type="radio" name="cl" value="si3" id="cl-10">
+			<label class="for-clarity" for="cl-10">
+				SI3
+			</label>
+			<input class="clarity" type="radio" value="i1" name="cl" id="cl-11">
+			<label class="for-clarity" for="cl-11">
+				I1
+			</label>
+			<input class="clarity" type="radio" value="i2" name="cl" id="cl-12">
+			<label class="for-clarity" for="cl-12">
+				I2
+			</label>
+			<input class="clarity" type="radio" value="i3" name="cl" id="cl-13">
+			<label class="for-clarity" for="cl-13">
+				I3
+			</label>
+			<input class="clarity" type="radio" name="cl" value="lc" id="cl-14">
+			<label class="for-clarity" for="cl-14">
+				LC
+			</label>
+		<hr>
+			<h5>&nbsp&nbsp&nbsp&nbsp&nbspFluorescence </h5>
+			<input class="fluore" type="radio" value="n" name="f" id="f-2" checked>
+			<label class="for-fluore" for="f-2">
+				N
+			</label>
+			<input class="fluore" type="radio" name="f" value="f" id="f-3">
+			<label class="for-fluore" for="f-3">
+				F
+			</label>
+			<input class="fluore" type="radio" name="f" value="vsl" id="f-4">
+			<label class="for-fluore" for="f-4">
+				VSL
+			</label>
+			<input class="fluore" type="radio" name="f" value="m" id="f-5">
+			<label class="for-fluore" for="f-5">
+				M
+			</label>
+			<input class="fluore" type="radio" name="f" value="sl" id="f-6">
+			<label class="for-fluore" for="f-6">
+				SL
+			</label>
+			<input class="fluore" type="radio" name="f" value="st" id="f-7">
+			<label class="for-fluore" for="f-7">
+				ST
+			</label>
+			<input class="fluore" type="radio" name="f" value="vs" id="f-8">
+			<label class="for-fluore" for="f-8">
+				VS
+			</label>
+		<hr>
+			<h5>&nbsp&nbsp&nbsp&nbsp&nbspColor Shade </h5>
+			<input class="shade" type="radio" name="s" value="wh" id="s-2" checked>
+			<label class="for-shade" for="s-2">
+				WH
+			</label>
+			<input class="shade" type="radio" name="s" value="yl" id="s-3">
+			<label class="for-shade" for="s-3">
+				YL
+			</label>
+			<input class="shade" type="radio" name="s" value="nv" id="s-4">
+			<label class="for-shade" for="s-4">
+				NV
+			</label>
+			<input class="shade" type="radio" name="s" value="brn1" id="s-5">
+			<label class="for-shade" for="s-5">
+				BRN1
+			</label>
+			<input class="shade" type="radio" name="s" value="brn2" id="s-6">
+			<label class="for-shade" for="s-6">
+				BRN2
+			</label>
+			<input class="shade" type="radio" name="s" value="brn3" id="s-7">
+			<label class="for-shade" for="s-7">
+				BRN3
+			</label>
+			<input class="shade" type="radio" name="s" value="grey" id="s-8">
+			<label class="for-shade" for="s-8">
+				GREY
+			</label>
+			<input class="shade" type="radio" name="s" value="grn" id="s-9">
+			<label class="for-shade" for="s-9">
+				GRN
+			</label>
+			<input class="shade" type="radio" name="s" value="pink" id="s-10">
+			<label class="for-shade" for="s-10">
+				PINK
+			</label>
+			<input class="shade" type="radio" name="s" value="fancy" id="s-12">
+			<label class="for-shade" for="s-12">
+				FANCY
+			</label>
+			<input class="shade" type="radio" name="s" value="type iia" id="s-13">
+			<label class="for-shade" for="s-13">
+				TYPE IIA
+			</label>
+		<hr>
+			<h5>&nbsp&nbsp&nbsp&nbsp&nbspLab </h5>
+			<input class="lab" type="radio" name="l" value="gia" id="l-2" checked>
+			<label class="for-lab" for="l-2">
+				GIA
+			</label>
+			<input class="lab" type="radio" name="l" value="igi" id="l-3">
+			<label class="for-lab" for="l-3">
+				IGI
+			</label>
+			<input class="lab" type="radio" value="hrd" name="l" id="l-4">
+			<label class="for-lab" for="l-4">
+				HRD
+			</label>
+			<input class="lab" type="radio" value="faith" name="l" id="l-5">
+			<label class="for-lab" for="l-5">
+				FAITH
+			</label>
+			<input class="lab" type="radio" value="fm" name="l" id="l-6">
+			<label class="for-lab" for="l-6">
+				FM
+			</label>
+			<input class="lab" type="radio" value="iidgr" name="l" id="l-7">
+			<label class="for-lab" for="l-7">
+				IIDGR
+			</label>
+		<hr>
+			<h5>&nbsp&nbsp&nbsp&nbsp&nbspCut </h5>
+			<input class="cut" type="radio" value="excellent" name="cu" id="cu-2" checked>
+			<label class="for-cut" for="cu-2">
+				EXCELLENT
+			</label>
+			<input class="cut" type="radio" value="very good" name="cu" id="cu-3">
+			<label class="for-cut" for="cu-3">
+				VERY GOOD
+			</label>
+			<input class="cut" type="radio" name="cu" value="good" id="cu-4">
+			<label class="for-cut" for="cu-4">
+				GOOD
+			</label>
+			<input class="cut" type="radio" value="fair" name="cu" id="cu-5">
+			<label class="for-cut" for="cu-5">
+				FAIR
+			</label>
+		<hr>
+			<h5>&nbsp&nbsp&nbsp&nbsp&nbspPolish </h5>
+			<input class="polish" type="radio" name="p" value="excellent" id="p-2" checked>
+			<label class="for-polish" for="p-2">
+				EXCELLENT
+			</label>
+			<input class="polish" type="radio" value="very good" name="p" id="p-3">
+			<label class="for-polish" for="p-3">
+				VERY GOOD
+			</label>
+			<input class="polish" type="radio" value="good" name="p" id="p-4">
+			<label class="for-polish" for="p-4">
+				GOOD
+			</label>
+		<hr>
+			<h5>&nbsp&nbsp&nbsp&nbsp&nbspSymmetry </h5>
+			<input class="symmetry" type="radio" name="sm" value="excellent" id="sm-2" checked>
+			<label class="for-symmetry" for="sm-2">
+				EXCELLENT
+			</label>
+			<input class="symmetry" type="radio" value="very good" name="sm" id="sm-3">
+			<label class="for-symmetry" for="sm-3">
+				VERY GOOD
+			</label>
+			<input class="symmetry" value="good" type="radio" name="sm" id="sm-4">
+			<label class="for-symmetry" for="sm-4">
+				GOOD
+			</label>
+			<input class="symmetry" type="radio" name="sm" value="fair" id="sm-5">
+			<label class="for-symmetry" for="sm-5">
+				FAIR
+			</label>
+		<hr>
+			<h5>&nbsp&nbsp&nbsp&nbsp&nbspLocation </h5>
+			<input class="location" type="radio" name="lo" value="mumbai" id="lo-2" checked>
+			<label class="for-location" for="lo-2">
+				MUMBAI
+			</label>
+			<input class="location" type="radio" name="lo" value="hong kong" id="lo-3">
+			<label class="for-location" for="lo-3">
+				HONG KONG
+			</label>
+			<input class="location" type="radio" name="lo" value="china" id="lo-4">
+			<label class="for-location" for="lo-4">
+				CHINA
+			</label>
+			<input class="location" type="radio" name="lo" value="new york" id="lo-5">
+			<label class="for-location" for="lo-5">
+				NEW YORK
+			</label>
+			<input class="location" type="radio" name="lo" value="upcoming" id="lo-6">
+			<label class="for-location" for="lo-6">
+				UPCOMING
+			</label>
+			<input class="location" type="radio" name="lo" value="transit" id="lo-7">
+			<label class="for-location" for="lo-7">
+				TRANSIT
+			</label>
+			<input class="location" type="radio" name="lo" value="show" id="lo-8">
+			<label class="for-location" for="lo-8">
+				SHOW
+			</label>
+			<input class="location" type="radio" name="lo" value="trip" id="lo-9">
+			<label class="for-location" for="lo-9">
+				TRIP
+			</label>
+			<input class="location" type="radio" name="lo" value="processing" id="lo-10">
+			<label class="for-location" for="lo-10">
+				PROCESSING
+			</label><br><br><center-left>
+		<input type="submit" class="submit" value="Search"></center>
+	</form>
+	</div>
+</div>
+</body>
+</html>
